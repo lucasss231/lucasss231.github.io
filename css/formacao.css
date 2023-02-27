@@ -175,10 +175,6 @@
       display: none;
     }
 
-    .academia-itens::before {
-      top: 83px;
-      left: 3px;
-    }
 
     .cursos .curso-img::before {
       top: -3.8px;
