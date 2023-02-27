@@ -1,0 +1,147 @@
+.experiencia {
+  display: grid;
+  grid-template-columns: 4fr 8fr;
+  max-width: 1200px;
+  gap: 120px;
+  margin: auto auto;
+  padding: 40px 20px;
+}
+
+.experiencia h1 {
+  font-size: 144px;
+  font-weight: 700;
+  word-break: break-all;
+  color: #e0e0e0;
+  text-transform: uppercase;
+}
+
+.experiencia-introducao h2 {
+  font-size: 24px;
+  max-width: 560px;
+  font-weight: 400;
+  color: #525252;
+  margin-bottom: 60px;
+}
+
+.experiencia-introducao h2 strong {
+  color: #141414;
+}
+
+.empresas {
+  display: grid;
+  padding: 20px;
+  background: #f5f5f5;
+  margin-bottom: 20px;
+  grid-template-columns: 2fr 1fr;
+  border-radius: 5px;
+  position: relative;
+  max-width: 660px;
+}
+
+.empresas::before {
+  content: "";
+  width: 4px;
+  top: 20px;
+  left: -4.3px;
+  height: 20px;
+  position: absolute;
+  background: linear-gradient(180deg, #b629f8 0%, #800add 100%);
+}
+
+.empresa-ano {
+  position: absolute;
+  top: 22px;
+  left: -60px;
+  font-size: 14px;
+  color: #525252;
+}
+
+.empresa-ano-iten {
+  position: absolute;
+  top: 22px;
+  left: -80px;
+}
+
+.empresa-titulo {
+  font-size: 18px;
+}
+.empresa-titulo-span {
+  word-wrap: break-word;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.empresa-texto {
+  font-size: 14px;
+}
+
+.empresa-habilidades {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+}
+
+.empresa-habilidades li {
+  padding: 3px 3px;
+  background: #ffffff;
+  border-radius: 5px;
+}
+
+@media (max-width: 1100px) {
+  .empresas {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .experiencia h1 {
+    font-size: 90px;
+    font-weight: 700;
+  }
+}
+
+@media (max-width: 800px) {
+  .experiencia {
+    gap: 20px;
+    grid-template-columns: 1fr;
+  }
+  .experiencia h1 {
+    font-size: 50px;
+    color: #525252;
+  }
+  .experiencia h1 br {
+    display: none;
+  }
+
+  .empresa-ano {
+    position: initial;
+    order: 2;
+    padding: 0px 10px;
+  }
+  .experiencia-introducao h2 {
+    font-size: 20px;
+    max-width: 560px;
+    font-weight: 400;
+    color: #525252;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 347px) {
+  .experiencia h1 {
+    font-size: 40px;
+    color: #525252;
+  }
+  .experiencia-introducao h2 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 270px) {
+  .experiencia h1 {
+    font-size: 30px;
+    color: #525252;
+  }
+  .experiencia-introducao h2 {
+    font-size: 15px;
+  }
+}
